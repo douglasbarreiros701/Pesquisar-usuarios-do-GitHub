@@ -15,5 +15,9 @@ The main objective of this project is seach users on **GitHub** and show all the
 * The selected mode must persist when the user returns to the app again
 
 ### Tecnologies 
+* Html
+* Css
 * JavaScript
+* Api from Github
+
 
