@@ -1,20 +1,12 @@
-const ul = document.querySelector('ul')
+function GetUser(){
+    fetch("https://api.github.com/users")
+    .then(snapshot =>{
+        console.log(snapshot)
+    }).catch(error=>{
+        console.log(error)
+    })
 
-function getApiGitHub(){
-    fetch("https://api.github.com/users/douglasbarreiros701/repos")
-    .then(async res =>{
-
-        if(!res.ok){
-            throw new Error(res.status)
-        }
-
-        var data = await res.json()
-
-        data.map(item =>{
-            let li = document.createElement('li')
-        })
-
-    }).catch(e => console,log(e))
 }
 
-getApiGitHub()
+GetUser()
+
