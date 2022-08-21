@@ -1,3 +1,4 @@
+
 var lastRepos, nomeDaConta, userDoesntExist, repoCount, avatar;
 onload = () => {
 	lastRepos = document.getElementById("lastRepos");
@@ -27,3 +28,4 @@ async function getApiGitHub() {
 	});
 	avatar.src = data[0].owner.avatar_url;
 }
+
