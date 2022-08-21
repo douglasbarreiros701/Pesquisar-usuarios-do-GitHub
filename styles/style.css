@@ -37,6 +37,14 @@ nav{
 main{
     background-color: #3D3A41;
     height: 90vh;
+    padding: 0 20px;
+    color: white;
+}
+a{
+    color: white;
+}
+a:hover {
+    color: gray;
 }
 
 #lupa{
@@ -51,6 +59,7 @@ main{
     display: flex;
     justify-content: center;
     padding-top: 100px;
+    padding-bottom: 50px;
 }
 
 .texto{
@@ -64,9 +73,13 @@ main{
     width: 300px;
     border: none;
     font-size: 20px;
+    text-indent: 4ex;
     
 }
 
-
-
+#userDoesntExist{
+    background-color: red;
+    padding: 20px;
+    border-radius: 5px;
+}
 
