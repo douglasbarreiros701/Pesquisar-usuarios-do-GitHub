@@ -9,7 +9,7 @@
 	<script src="main.js" type="text/javascript"></script>
 </head>
 <body>
-	<div class="container">
+	
 		<header>
 			<nav>
 				<div class="titulo">
@@ -25,12 +25,41 @@
 					<img id="lupa" src="./styles/img/lupa.png" onclick="getApiGitHub()">
 				</div>
 			</div>
-			<div id="userDoesntExist" style="display:none">&times; O usuário não existe</div>
-			<img id="avatar" width="64" height="64"><br>
-			Contagem do repositório: <span id="repoCount"></span><br>
-			Repositórios recentes:
-			<ul id="lastRepos"></ul>
+			
+			<div class="areaAvatar">
+							
+				<!-- COMEÇO AVATAR -->
+
+				<img class="avatarImagem" id="avatar"><br>
+
+				<!-- FIM AVATAR -->
+
+				
+				<!-- COMEÇO USUARIO NÃO EXISTE -->
+				<div id="userDoesntExist" style="display:none">&times; O usuário não existe</div> 
+				<!-- FIM USUARIO NÃO EXISTE -->
+
+				<!-- COMEÇO TEXTOS -->
+				<div class="textos"> 
+				<ul>
+					<p id="contagemRepositorio">Contagem do repositório:</p> <span id="repoCount"></span><br>
+				</ul>
+				
+				<ul>
+					<p id="recenteRepositorio">	Repositórios recentes:</p>
+					<ul class="ultimosRepositorios" id="lastRepos"></ul>
+				</ul>
+				<!-- FIM TEXTOS -->
+				
+				</div>
+				
+			</div>
+				
 		</main>
-	</div>
+
+					
+
+			
+	
 </body>
 </html>

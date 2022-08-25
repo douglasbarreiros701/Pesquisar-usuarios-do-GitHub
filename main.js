@@ -8,14 +8,17 @@ onload = () => {
 	avatar = document.getElementById("avatar");
 }
 async function getApiGitHub() {
-	// Get the user
+	// Encontrar usuario 
 	const res = await fetch(`https://api.github.com/users/${nomeDaConta.value}/repos`);
 	var data = await res.json();
 	if (data.message == "Not Found") {
-		// User Not Found
+		// Usuario não encontrado 
 		userDoesntExist.style.display = "block";
 		return;
 	}
+
+//  não entendi essa parte
+
 	userDoesntExist.style.display = "none";
 	data.sort((a, b) => new Date(a.created_at.replace("T", " ").replace("Z", "")).getTime() > new Date(b.created_at.replace("T", " ").replace("Z", "")).getTime());
 	repoCount.innerText = data.length;
